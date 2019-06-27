@@ -1,4 +1,4 @@
-# Building and Deployment an Application
+# Building and Deploying an Application
 
 本教程将指导你如何通过EnOS SHC快速构建和部署应用、将应用发布至指定集群中，并且测试使用应用。
 

@@ -1,6 +1,6 @@
 # About EnOS Service Hosting Center
 
-Note: This article is in the progress of translation. Thanks for your visit.
+Note: This documentation is in the progress of translation. Thanks for your visit!
 
 EnOS服务托管中心（Service Hosting Center，SHC）提供高性能可伸缩的容器应用管理服务，帮助项目负责人创建和管理应用开发项目、配置集群和容器，并帮助应用开发者快速构建和部署应用。SHC容器服务简化了容器管理集群的搭建工作，打造云端最佳容器运行环境。
 

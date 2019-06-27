@@ -1,4 +1,4 @@
-# DevOps Continuous Deliery
+# DevOps Continuous Delivery
 
 EnOS SHC流水线服务，配合 Jenkins，支持自动完成从代码提交到应用部署的 DevOps 完整流程，实现应用的持续交付能力。
 

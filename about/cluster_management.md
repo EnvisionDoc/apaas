@@ -1,4 +1,4 @@
-# Cluster Mnagement
+# Cluster Management
 
 EnOS SHC集群管理为应用开发和部署提供集中的集群资源配额管理、网络策略配置、和存储资源管理等服务。
 
