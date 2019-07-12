@@ -1,71 +1,71 @@
 # Configuring Deployments
 
-本文章介绍应用开发人员如何配置发布应用的部署信息。
+This topic describes how application developers can configure deployment information for applications to be published.
 
-## 前提条件
+## Prerequisites
 
-在新建Deployment之前，需要完成应用创建和基本信息配置。详细步骤，参见[新建应用](../admin/managing_app#newapp)。
+Before creating a new deployment, you need to complete the application creation and the basic information configuration of the application. For detailed steps, see [Creating Applications](../admin/managing_app#newapp).
 
-## 新建Deployment
+## Creating deployment
 
-应用的Deployment信息可以通过Config和Yaml配置两种方式进行配置。以Config配置方式为例，通过以下步骤为应用新建Deployment：
+The deployment information of the application can be configured by two modes: **Config** and **Yaml**. Taking the **Config** mode as an example, create a new deployment for the application by the following steps:
 
-1. 在项目列表中，点击项目名称，进入项目空间。
+1. In the project list, click on the project name to enter the project space.
 
-2. 在左侧导航栏中，选择 **容器 > Deployments**。
+2. In the left navigation bar, select **Container > Deployments**.
 
-3. 点击 **新建Deployment**，并完成对Deployment的详细配置。
+3. Click the **New Deployment** button and complete the detailed configuration of the deployment.
 
-4. 提供Deployment的基本信息：
+4. Provide basic information about the deployment:
 
-   - **应用名称**：选择待部署的应用
-   - **环境**：选择部署应用的环境，目前支持dev，alpha，beta，ppe，和prod环境
-   - **集群**：选择部署应用的集群，目前集群已由系统预先配置
-   - **副本数**：输入需要的副本数量
+   - **Application Name**: Select the application to be deployed.
+   - **Environment**: Select the application deployment environment, for which dev, alpha, beta, ppe, and prod environments are supported currently.
+   - **Cluster**: Select the cluster where the application is deployed. Note that the cluster is already pre-configured by the system.
+   - **Replicas**: Enter the number of replicas required.
 
-5. 配置应用运行所需的计算 **资源限额**，包括CPU和内存的限额。如下图所示：
+5. Configure the computing **Resource Quota** required to run the application, including CPU and memory quota. As show below:
 
    .. image:: ../../media/deployment_config.png
 
-6. （选填）设置运行应用的 **环境变量** 和值。
+6. (Optional) Set the **Environment Variable** and value for running the application.
 
-7. （选填）选择需要注入容器的 **Config Map** 配置，并输入挂载目录。配置Config Map的详细信息，参见[配置Config Map](configuring_configmap_secret)。
+7. (Optional) Select the **Config Map** configuration that needs to be injected into the container and enter the mount path. For details on configuring the Config Map, see [Configuring Config Maps](configuring_configmap_secret).
 
-8. （选填）设置 **日志采集文件** 的目录。
+8. (Optional) Set the **Log Path** for storing the log files.
 
-9. （选填）选择应用的 **存储配置**，并输入挂载目录。配置存储的详细信息，参见[配置Storage](configuring_storage)。
+9. (Optional) Select the **Storages** configuration for the application and enter the mount path. For details on configuring the storage, see [Configuring Storage](configuring_storage).
 
-10. （建议填写）配置容器的 **就绪探针**，以检测容器是否就绪。就绪探针的配置信息包括检测任务的超时时间（秒）、探测周期（秒）、失败重试次数、探测延迟时间（秒）、以及探针的方式和参数。有关容器探针的详细介绍，参见[Pod 的生命周期](https://kubernetes.io/zh/docs/concepts/workloads/pods/pod-lifecycle)。
+10. (Recommended) Configure **Readiness Probe** for the container to check if the container is ready. The configuration information of the readiness probe includes the detection task timeout time (seconds), the detection period (seconds), the number of retry times, the detection initial delay (seconds), and the handler and parameters of the probe. For details about container probes, see [Pod Lifecycle](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes).
 
   .. image:: ../../media/probe.png
 
-11. （选填）配置容器的 **存活探针**，配置信息与就绪探针类似。
+11. (Optional) Configure the **Liveness Probe** for the container with its configuration information similar to the Readiness Probe.
 
-12. 设置 **容器最小就绪时间**（秒）。
+12. Set **Minimum Readiness Time** of the container (seconds).
 
-13. 输入对Deployment的描述信息。
+13. Enter the description for the deployment.
 
-14. 点击 **新建Deployment** 按钮，完成配置。
+14. Click the **New Deployment** button to complete the configuration.
 
-## 管理Deployment
+## Managing deployment
 
-应用Deployment信息创建完成后，可对Deployment进行克隆、编辑、删除、和发布等操作。
+After the application deployment configuration is created, you can clone, edit, delete, and publish the deployment.
 
 .. image:: ../../media/edit_deployment.png
 
-- **克隆**：在已创建的Deployment列表中，选中Deployment名称，点击 **克隆** 按钮，即可复用Deployment配置信息，快速创建新的Deployment。
+- **Clone**: In the list of created deployments, select the deployment name and click the **Clone** button to reuse the deployment configuration information and quickly create a new deployment.
 
-- **编辑**：选中Deployment名称，点击 **编辑** 按钮，即可更新Deployment配置信息。
+- **Edit**: Select the deployment name and click the **Edit** button to update the deployment configuration information.
 
-- **删除**：选中Deployment名称，点击 **删除** 按钮并确认，即可删除Deployment配置信息。
+- **Delete**: Select the deployment name, click the **Delete** button and confirm, and you can delete the deployment configuration information.
 
-- **发布**：选中Deployment名称，点击 **发布** 按钮并配置发布信息。
+- **Publish**: Select the deployment name, click the **Publish** button, and configure the information required:
 
-   - 在 **发布操作** 一栏中，选择Docker镜像后，点击 **开始** 按钮。
+   - In the **Publish Operation** section, select a docker image, and click the **Start** button.
 
      .. image:: ../../media/publish_deployment.png
 
-   - 查看Deployment发布结果和发布历史。
+   - View the publishing results and history of the deployment.
 
      .. image:: ../../media/publish_result.png
 

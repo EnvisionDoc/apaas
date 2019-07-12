@@ -1,60 +1,60 @@
 # Configuring Log Service
 
-EnOS SHC日志服务将应用部署和发布日志进行聚合和统一管理，帮助应用开发和运维快速排查问题。
+EnOS SHC log service aggregates logs about application development and publish for unified management, helping application development and operation teams to quickly troubleshoot problems.
 
-## 配置集群日志服务
+## Configuring Log Service for Cluster
 
-通过以下步骤为集群配置日志服务：
+You can configure log service for the cluster by taking the following steps:
 
-1. 在左侧导航栏中，选择 **日志 > 集群配置**。
+1. In the left navigation bar, select **Logs > Cluster Configuration**.
 
-2. 点击 **新建集群配置** 按钮，完成集群日志服务配置：
+2. Click the **New Cluster Config** button to complete the cluster log service configuration:
 
-   - **集群名称**：输入配置日志服务的集群名称
+   - **Cluster Name**: Enter the cluster name to be configured with the log service.
 
-   - **类型**：默认为ES.CONTAINER.LOG
+   - **Type**: ES.CONTAINER.LOG by default.
 
-   - **hostname**：输入主机名称
+   - **hostname**: Enter the host name.
 
-   - **port**：输入端口号
+   - **port**: Enter the port number.
 
-   - **scheme**：输入
+   - **scheme**: Select scheme for the log service.
 
      .. image:: ../media/cluster_log.png
 
-3. 点击 **新建集群配置** 按钮，保存配置。
+3. Click the **New Cluster Config** button to save the configuration.
 
 
-## 配置应用日志服务
+## Configuring Log Service for Applications
 
-通过以下步骤为应用配置日志服务：
+You can configure log service for your applications by taking the following steps:
 
-1. 在左侧导航栏中，选择 **日志 > 应用配置**。
+1. In the left navigation bar, select **Logs > Application Configuration**.
 
-2. 点击 **新建应用配置** 按钮，完成应用日志服务配置：
+2. Click the **New Application Config** button to complete the application log service configuration:
 
-   - **配置名称**：输入日志服务配置的名称
+   - **Application Config Name**: Enter the name of the log service configuration.
 
-   - **应用名称**：选择配置日志服务的应用名称
+   - **Application Name**: Select the application name to be configured with the log service.
 
-   - **集群**：选择已配置的集群日志服务
+   - **Cluster**: Select the configured cluster log service.
 
-   - **索引格式**：输入应用检索日志的索引格式
+   - **Indices format**: Enter the indices format of the application search log.
 
-   - **时间戳字段**：输入时间戳字段，使用此字段按时间过滤数据
+   - **Timestamp Field**: Enter a timestamp, which will be used to filter data by time.
 
      .. image:: ../media/app_log.png
 
-3. 点击 **新建应用配置** 按钮，保存配置。
+3. Click the **New Application Config** button to save the configuration.
 
-## 查询日志
+## Querying Logs
 
-通过以下步骤查询应用部署和发布相关的日志：
+You can take the following steps to query the application deployment and publish related logs:
 
-1. 在左侧导航栏中，选择 **日志 > 日志**。
-2. 选择待查询的应用名称和查询的日志起止时间。
-3. 输入筛选条件，点击 **查询** 按钮。
+1. In the left navigation bar, select **Logs > Log**.
+2. Select the name of the application to be queried as well as the start and end time for log query.
+3. Enter the filter criteria and click the **Search** button.
 
-符合查询条件的日志信息将显示在页面下方。
+The log information that matches the query criteria will be displayed on the page.
 
 <!--end-->

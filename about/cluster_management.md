@@ -1,9 +1,10 @@
 # Cluster Management
 
-EnOS SHC集群管理为应用开发和部署提供集中的集群资源配额管理、网络策略配置、和存储资源管理等服务。
+EnOS SHC cluster management provides centralized cluster resource quota management, network policy configuration, storage resource management and other services for application development and deployment.
 
-## 主要功能
+## Main Functions
 
-**集群日志采集**
+**Cluster log collection**
 
-用户可以根据业务需求，集成第三方日志服务，监控集群活动和状态，便于通过日志调试和解决问题。
+Depending your business needs, you can integrate third-party log services to monitor cluster activities and status, facilitating debugging and problem solving through log analysis.
+

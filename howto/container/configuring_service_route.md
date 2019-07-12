@@ -1,72 +1,70 @@
 # Configuring Services and Routes
 
-本文章介绍应用开发人员如何新建Service配置，以支撑应用对集群外部暴露Web服务，并且同时配置Route。
+This topic describes how application developers can create new service configuration so that applications can expose Web services outside the cluster, as well as how to configure corresponding routes.
 
-## 前提条件
+## Prerequisites
 
-在新建Service之前，需要完成Deployment配置。详细步骤，参见[配置Deployment](configuring_deployment)。
+Before creating a new service, you need to complete the deployment configuration. For detailed steps, see [Configuring Deployments](configuring_deployment).
 
-## 新建Service
+## Creating Service
 
-通过以下步骤为应用新建Service：
+You can create a new service for your application as per the following steps:
 
-1. 在左侧导航栏中，选择 **容器 > Services**。
+1. In the left navigation bar, select **Container > Services**.
 
-2. 点击 **新建Service**，并完成Service的详细配置。
+2. Click the **New Service** button and complete the detailed configuration of the service.
 
-3. 提供Service的基本信息：
+3. Provide the basic information for the service:
 
-   - **应用**：选择需要发布Service的应用
-   - **环境**：选择Service环境，目前支持dev，alpha，beta，ppe，和prod环境
-   - **集群**：选择部署应用的集群，目前集群已由系统预先配置
-   - **类型**：选择Service的类型，目前仅支持ClusterIP
+   - **Application**: Select the application that needs to publish the service.
+   - **Environment**: Select the service environment, for which dev, alpha, beta, ppe, and prod environments are supported currently.
+   - **Cluster**: Select the cluster where the application is deployed. Note that the cluster is already pre-configured by the system.
+   - **Type**: Select the service type, where only ClusterIP is supported currently.
 
-4. 完成Service的端口配置：输入服务的端口和目标端口，并选择协议类型。
+4. Complete the port configuration for the service by entering the port and target port for the service and selecting the protocol type.
 
-  - **输入端口**：提供给集群内部客户访问Service的入口
-  - **目标端口**：是pod上的端口，从服务端口接收的数据最终经过kube-proxy流入到后端pod的目标端口，进入容器
-  - **协议**：端口支持的协议，可选TCP或UDP
-
-5. **选择器**：选择应用的部署类型，及对应的部署名称。
+  - **Port**: The port to be used by the internal clients of the cluster to access the service.
+  - **Target port**: The port on the pod. The data received from the service port finally flows through the kube-proxy to the target port of the backend pod and then to the container.
+  - **Protocol**: Protocol supported by the ports, where you can select TCP or UDP.
 
   .. image:: ../../media/service_config.png
 
-6. 输入对Service的描述信息。
+5. Enter the description for the service.
 
-7. 点击 **新建Service** 按钮，完成配置。
+6. Click the **New Service** button to complete the configuration.
 
-## 新建Route
+## Creating routes
 
-通过以下步骤为应用新建Route：
+You can create a new route for your application as per the following steps:
 
-1. 在左侧导航栏中，选择 **容器 > Routes**。
+1. In the left navigation bar, select **Container > Routes**.
 
-2. 点击 **新建Route**，并完成Route的详细配置。
+2. Click the **New Route** button and complete the detailed configuration of the route.
 
-3. 提供Route的基本信息：
+3. Provide the basic information for the route:
 
-   - **应用**：选择需要使用Route的应用
-   - **环境**：选择Route环境，目前支持dev，alpha，beta，ppe，和prod环境
-   - **集群**：选择部署应用的集群，目前集群已由系统预先配置
+   - **Application**: Select an application that requires the route.
+   - **Environment**: Select the route environment, for which dev, alpha, beta, ppe, and prod environments are supported currently.
+   - **Cluster**: Select the cluster where the application is deployed. Note that the cluster is already pre-configured by the system.
 
-4. 配置Route规则：
+4. Configure the route rules:
 
-   - **主机名**：根据集群默认设置，无法修改
+   - **Host**: Depends on default cluster settings, and can not be modified.
 
-   - **路径**：输入访问对外服务的路径
+   - **Route**: Enter the path to access the external service.
 
-   - **服务**：选择已创建的服务
+   - **Service**: Select the service you have created.
 
-   - **端口**：输入路由，仅可选8080
+   - **Port**: Select the port, where only 8080 can be selected.
 
      .. image:: ../../media/route_config.png
 
-5. 输入对Route的描述信息。
+5. Enter the description for the route.
 
-6. 点击 **新建Route** 按钮，完成配置。
+6. Click the **New Route** button to complete the configuration.
 
-## 后续操作
+## Next Step
 
-Service和Route创建完成后，可对Service和Route进行克隆、编辑、和删除操作。具体步骤和[配置Deployment](configuring_deployment)相似。
+After the service and route are created, you can clone, edit and delete them as needed. The specific steps are similar to those for [Configuring Deployments](configuring_deployment).
 
 <!--end-->

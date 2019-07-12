@@ -1,33 +1,33 @@
 # Configuring Storage
 
-本文章介绍应用开发人员如何新建Storage配置，以支撑应用的数据存储需求。
+This topic describes how application developers can create new storage configuration to support the data storage needs of applications.
 
-## 新建Storage
+## Creating Storage
 
-通过以下步骤为应用新建Storage：
+Create storage configuration for your application as per the following steps:
 
-1. 在左侧导航栏中，选择 **容器 > Storage**。
+1. In the left navigation bar, select **Container > Storage**.
 
-2. 点击 **新建Storage**，并完成Storage的详细配置。
+2. Click the **New Storage** button and complete the detailed configuration of the storage.
 
-3. 提供Storage的基本信息：
+3. Provide the basic information for the storage:
 
-   - **应用**：选择需要使用Storage的应用
-   - **环境**：选择Storage使用环境，目前支持dev，alpha，beta，ppe，和prod环境
-   - **集群**：选择部署应用的集群，目前集群已由系统预先配置
+   - **Application**: Select an application that requires the storage.
+   - **Environment**: Select the storage usage environment, for which dev, alpha, beta, ppe, and prod environments are supported currently.
+   - **Cluster**: Select the cluster where the application is deployed. Note that the cluster is already pre-configured by the system.
 
-4. 输入应用需要的Storage容量（GB）。
+4. Enter the storage capacity (GB) that is required by the application.
 
-5. 输入对存储文件数量的最大限制。
+5. Enter the maximum limit on the number of stored files.
 
   .. image:: ../../media/storage_config.png
 
-6. 输入对Storage的描述信息。
+6. Enter the description for the storage.
 
-7. 点击 **新建Storage** 按钮，完成配置。
+7. Click the **New Storage** button to complete the configuration.
 
-## 后续操作
+## Next Step
 
-Storage配置创建完成后，可对Storage配置进行克隆、编辑、和删除操作。具体步骤和[配置Deployment](configuring_deployment)相似。
+After the storage configuration is created, you can clone, edit and delete it as needed. The specific steps are similar to those for [Configuring Deployments](configuring_deployment).
 
 <!--end-->

@@ -1,25 +1,25 @@
 # Container Management
 
-EnOS SHC容器管理服务为应用开发和运维提供高性能可扩展的容器管理服务。
+The EnOS SHC container management provides high-performance and scalable container management services for application development and operation.
 
-## 主要功能
+## Main Functions
 
-**一站式容器管理**
+**One-stop container management**
 
-提供易用的Web UI，实现一站式容器配置和管理，简化容器管理工作，打造应用最佳容器运行环境。
+Provides an easy-to-use web UI for one-stop container configuration and management, streamlining container management and creating the best container runtime environment for your applications.
 
-**定制化应用部署配置**
+**Customized application deployment configuration**
 
-为每个应用配置定制化的部署配置，确保容器的健康运行，并提高计算资源的利用率。
+You can configure customized deployment configuration for each application to ensure the container health and enhance the utilization of computing resources.
 
-**服务和路由**
+**Services and routes**
 
-为部署或状态副本集创建服务和路由，支持多层请求转发和后端绑定，实现负载均衡。
+You can create services and routes for deployments or stateful sets, which support multi-layer request forwarding and back-end binding for load balancing.
 
-**配置字典和加密字典**
+**Config Maps and Secrets**
 
-支持应用配置文件单独保存和挂载，敏感信息单独保存。
+Supports saving and mounting of application configuration files separately, and saving sensitive information separately.
 
-**存储扩展**
+**Storage extension**
 
-支持应用存储容量按需扩展。
+Supports extension of application storage capacity as needed.

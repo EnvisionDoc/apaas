@@ -13,5 +13,4 @@ The major functions of EnOS SHC are as follows:
 
    devops
    container_management
-   cluster_management
    governance

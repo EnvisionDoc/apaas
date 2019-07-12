@@ -1,23 +1,23 @@
 # Terminology
 
-本文章介绍EnOS SHC涉及的术语。
+This topic introduces the major concepts involved in EnOS SHC.
 
-## 容器
+## Container
 
-容器是一种特殊的进程模型，为应用的部署和运行提供所需的硬件、操作系统、存储、以及网络容量等资源，为应用开发提供高性能可扩展的管理服务。
+A container is a special process model that provides hardware, operating system, storage, network capacity, and other resources required for application deployment and running, and provides high-performance and scalable management services for application development.
 
-## 集群
+## Cluster
 
-集群是计算、存储和网络资源的集合，利用这些资源运行各种基于容器的应用。
+A cluster is a collection of computing, storage, and network resources that can be used to run various container-based applications.
 
-## 流水线
+## Pipeline
 
-流水线的本质是应用研发到交付的流程，它把流程中的不同阶段和任务（构建、代码扫描、Jenkins任务等）串接在一起，并且可以设置为自动化地按步骤执行。
+The essence of a pipeline is a complete process covering from application development to delivery, which links the different phases and tasks (build, code scanning, Jenkins jobs, etc.) in the process and can be set to be executed automatically step by step.
 
 <!--
 
 ## APaaS
 
-Application platform as a service ，或简称平台即服务，是一种云计算服务模型。为用户提供云上运行现有应用程序或开发新应用程序所需的硬件、操作系统、存储、以及网络容量。APaaS简化了创建和部署应用程序的技术方面，更易于维护和扩展，并且位于不同地理位置的开发团队可以通过云在软件开发项目上协同工作。
+Refers to the application platform as a service, or simply platform-as-a-service, which is a cloud computing service model. It provides users with the hardware, operating system, storage and network capacity needed to run existing applications  or develop new applications on the cloud. APaaS helps to simplify the technical complexity for building and deploying applications, and is easier to maintain and scale. With APaaS, the development teams across different geographic locations can work together on software development projects through the cloud.
 
 -->

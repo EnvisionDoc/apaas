@@ -1,52 +1,52 @@
 # Managing Applications
 
-本文章介绍项目负责人如何通过SHC新建应用，管理应用成员等基本信息。
+This topic describes how project administrator can create an application and manage application members and other basic information of the application.
 
-## 新建应用<newapp>
+## Creating an Application <newapp>
 
-应用开发和部署的项目负责人，可通过以下步骤新建应用：
+The project administrator for application development and deployment can create an application by taking the following steps:
 
-1. 在项目列表中点击项目名称，打开项目概览页面。
+1. Open the project overview page by clicking the project name in the project list.
 
-2. 在左侧导航栏中，选择 **应用**，然后点击 **新建应用**。
+2. In the left navigation bar, select **Application**, then click **New Application**.
 
-3. 输入应用名称，选择应用开发语言。
+3. Enter the application name and select the application development language.
 
-4. 输入应用代码仓库地址。代码仓库地址可先不填，在仓库地址生成后再编辑应用信息。
+4. Enter the application GitLab repository. The repository can be left blank here, and be edited in application **Basic Information** after it is generated.
 
-5. 输入对应用的描述，然后点击 **下一步**。
+5. Enter a description for the application and click **Next Step**.
 
    .. image:: ../../media/create_app.png
 
-6. 选择应用成员和成员角色，点击 **添加成员**，然后点击 **下一步**。
+6. Select one or more application members and the member role, click **Add Member**, then click **Next Step**.
 
    .. image:: ../../media/add_member.png
 
-7. 为应用配置详细的容器部署信息。可点击 **跳过** 按钮，后续由应用开发者分布完成应用的部署配置。详细信息，参考[管理容器配置](/docs/apaas/zh_CN/latest/howto/container/index.html)。
+7. Configure detailed container deployment information for the application. Click **Skip** to skip the configuration if you want to configure the container information after the application is created. Application developers can complete the configurations later. For details, see [Managing Container Configurations](/docs/apaas/zh_CN/latest/howto/container/index.html).
 
-应用创建完成后，可在应用列表中，点击应用名称，查看应用的基本信息。
+Once the application is created, you can view its basic information by clicking on the application name in the application list.
 
-## 编辑应用信息
+## Editing Application Information
 
-对已创建的应用，项目负责人或应用负责人可编辑应用的基本信息。
+The project administrator or application owner can edit the basic information of any created applications.
 
-1. 在左侧导航栏中，选择 **应用**。在应用列表中，点击应用名称，打开应用详情页。
+1. In the left navigation bar, select **Application**. In the application list, click the application name to open the application details page.
 
-2. 在 **基本信息** 标签下，点击 **编辑**，即可更新应用的开发语言和对应用的描述。点击 **删除**并确认，即可删除应用。
+2. In the **Basic Information** section, click **Edit** to update the development language and description of the application. Click **Delete** and confirm to delete the application.
 
-3. 在 **代码仓库** 一栏中，点击 **编辑**，更新应用的代码仓库地址。
+3. For **Git Repository**, click **Edit** to update the application's code repository.
 
    .. image:: ../../media/app_overview.png
 
-4. 在 **应用流水线概况** 一栏中，查看应用运行的历史信息，包括流水线任务名称、成功和失败的任务数量等。
+4. In the **Application Pipeline Overview**, view the running history of the application, including the pipeline name, the number of successful and failed jobs, and more.
 
    .. image:: ../../media/app_pipeline_overview.png
 
-5. 在 **成员** 标签下，可添加应用成员、更新现有成员信息、或移除成员。
+5. Under the **Member** tab, you can add application members, update existing member information, or remove members.
 
    .. image:: ../../media/app_member.png
 
-6. 在 **部署** 标签下，查看应用的部署信息。
+6. Under the **Deployment** tab, view the deployment information of the application.
 
 
 <!--end-->

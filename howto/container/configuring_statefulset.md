@@ -1,8 +1,8 @@
 # Configuring Stateful Sets
 
-容器自动化部署支持Kubernetes Stateful Set资源（有状态副本集），Stateful Set资源部署支持环境变量配置，从而实现容器内JVM自适应。
+The automatic container deployment service supports Kubernetes Stateful Set resources (stateful sets). The Stateful Set resource deployment supports environment variable configuration to achieve JVM adaptation within the container.
 
-新建和管理Stateful Set的步骤与配置Deployment相似，详细信息，参见[配置Deployment](configuring_deployment)。
+The steps for creating and managing Stateful Sets are similar to the configuration of Deployments. For details, see [Configuring Deployments](configuring_deployment).
 
 
 

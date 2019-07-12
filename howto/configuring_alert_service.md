@@ -1,35 +1,33 @@
 # Configuring Alarm Service
 
-EnOS SHC告警服务支持自定义告警规则设置，当应用部署和发布产生的事件条数达到设定的阈值时，发送告警通知相关人员。
+EnOS SHC alarm service supports setting customized alert rules. With these rules, an alert will be sent to notify relevant personnel when the number of events generated from the application deployment and pubish process reaches the set threshold.
 
-## 配置告警规则
+## Configuring Alert Rules
 
-通过以下步骤为应用配置告警规则：
+You can follow the steps below to configure the alarm rules for your applications:
 
-1. 在左侧导航栏中，选择 **告警**。
+1. In the left navigation bar, select **Alerts**.
 
-2. 点击 **新建告警规则** 按钮，完成告警规则配置：
+2. Click the **New Alert Rule** button to complete the alert rule configuration:
 
-   - **规则名称**：输入告警规则的名称
+   - **Rule Name**: Enter the name of alert rule.
 
-   - **应用名称**：选择配置告警服务的应用名称
+   - **Application Name**: Select the application name to be configured with the alert service.
 
-   - **应用日志配置**：选择已配置的应用日志服务
+   - **Application Log Configuration**: Select the configured application log service.
 
-   - **类型**：选择告警规则类型，仅支持FREQUENCY，在规定时间内，符合筛选条件的日志条数超过设定阈值则触发告警
+   - **Rule Type**: Select the alert rule type, where only FREQUENCY is supported for now. If the number of logs that meet the filtering criteria exceeds the set threshold within the specified time range, the alert will be triggered.
 
-   - **filter**：输入筛选条件，用于筛选符合条件的日志，如：code:200
+   - **filter**: Enter the filter criteria (e.g. code:200) to filter out eligible logs.
 
-   - **timestampField**：输入时间戳字段，将使用此字段按时间过滤数据，可以选择不包含时间字段，但无法按时间范围缩小数据范围
+   - **timestampField**: Enter a timestamp, which will be used to filter data by time. If not specified, you can not narrow the data range by time range.
 
-   - **eventCount**：输入事件数量阈值，当一段时间内产生日志条数超过此阈值，将会触发告警
+   - **eventCount**: Enter the threshold for the number of events. When the number of logs generated within a certain time range exceeds this threshold, an alert will be triggered.
 
-   - **timeFrame**：输入告警时间窗口，统计窗口内的日志条数与阈值进行比较
-
-   - **noticeUserList**：输入告警触发时，发送邮件通知的用户列表，用户名用逗号分隔
+   - **timeFrame**: Enter the alert time window, and compare the number of logs in the statistics window with the threshold.
 
      .. image:: ../media/alert_rule.png
 
-3. 点击 **新建告警规则** 按钮，保存配置。
+3. Click the **New Alarm Rule** button to save the configuration.
 
 <!--end-->

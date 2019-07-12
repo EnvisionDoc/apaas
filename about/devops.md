@@ -1,25 +1,25 @@
 # DevOps Continuous Delivery
 
-EnOS SHC流水线服务，配合 Jenkins，支持自动完成从代码提交到应用部署的 DevOps 完整流程，实现应用的持续交付能力。
+EnOS SHC pipeline service supports the complete DevOps process from automatic code submission to application deployment, enabling continuous delivery of applications.
 
-## 主要功能
+## Main Functions
 
-**支持多种语言和工具**
+**Support for multiple languages and tools**
 
-支持包括Java，nodejs，python，go等编程语言和相应的语言工具。
+Supports multiple programming languages such as Java, nodejs, python and go as well as the corresponding language tools.
 
-**多种触发方式**
+**Multiple triggering modes**
 
-流水线运行支持手动触发、自动触发、和定时触发等方式。
+Supports multiple modes of triggering the pipeline running, including automatic, manual, and scheduled triggering modes.
 
-**分阶段运行任务**
+**Running tasks by stages**
 
-可根据业务需求，分阶段运行代码扫描、构建、部署等流水线任务。
+Depending on business needs, pipeline tasks such as code scanning, building, and deployment can be run by stages.
 
-**自定义任务**
+**Customized tasks**
 
-按照应用开发和部署需求，自定义需要运行的代码扫描、构建、部署、Jenkins任务等。
+You can customize various tasks, including code scanning, building, deployment, and Jenkins jobs, depending on your application development and deployment needs.
 
-**任务运行日志下载**
+**Downloading task running logs**
 
-可实时查看任务运行状态和结果，按需下载任务运行日志。
+You can view in real time the task running status and results, and download the task running logs as needed.

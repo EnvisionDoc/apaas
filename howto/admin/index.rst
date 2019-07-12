@@ -5,11 +5,11 @@
    :depth: 2
    :hidden:
 
-项目负责人可通过SHC管理应用DevOps项目和应用的基本信息，包括新建项目和应用，管理参与项目和应用的成员，维护角色权限等。
+Project administrator is responsible for managing the basic information of DevOps projects and applications, such as creating projects and applications, managing members of projects and applications, and maintaining role permissions. 
 
 .. toctree::
    :maxdepth: 2
-   :caption: 操作
+   :caption: How-to's
 
    managing_project
    managing_app

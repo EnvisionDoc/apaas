@@ -1,48 +1,52 @@
 # Managing Projects
 
-本文章介绍项目负责人如何通过SHC新建应用DevOps项目，管理项目成员，维护角色权限。
+This topic describes how project administrator can create an application DevOps project and manage project members.
 
-## 新建项目
+## Creating a Project
 
-应用开发和部署的项目负责人，可通过以下步骤新建项目：
+The project administrator for application development and deployment can create a project by taking the following steps:
 
-1. 登录EnOS控制台，在左侧导航栏中选择 **服务托管中心**。
-2. 点击 **项目 > 新建项目**，输入项目名称和描述，完成项目创建。
+1. Log into the EnOS Console and select **Service Hosting Center** in the left navigation pannel.
+2. Click **Project > New Project**, enter the project name and description to complete the project creation.
 
-创建完成的项目会展示在项目列表中，点击项目名称，打开项目概览页面，可查看项目的基本信息。
+The created project will be displayed in the project list. Click the project name to open the project overview page to view the basic information of the project.
 
-如需更新项目信息，在项目列表中选中项目，点击 **编辑** 按钮，即可更新项目描述。如需删除项目，选中项目后，点击 **删除** 并确认。
+To update the project information, select the project in the project list and click the **Edit** button. To delete a project, select it and click **Delete** and confirm.
 
-## 管理项目成员
+## Managing Project Members
 
-项目创建完成之后，可通过以下步骤管理项目成员：
+After a project is created, the project administrator can manage members of the project by taking the following steps:
 
-1. 在项目列表中，点击项目名称。
+1. In the project list, click on the project name to open the project space.
 
-2. 在左侧导航栏中，点击 **项目成员**。
+2. In the left navigation bar, select **Project Members**.
 
-3. 在 **用户名** 一栏中，输入用户名进行查找。
+3. In the **User Name** field, search and select a user.
 
-4. 为选中的用户选择相应的角色，点击 **添加用户**，将用户加入到项目中。
+4. Select a role for the selected user and click **Add User** to add the user to the project.
 
    .. image:: ../../media/add_user.png
 
-5. 如需变更现有项目成员的角色，选中成员用户名，点击 **编辑**。然后在角色一栏中，调整项目成员的角色。
+5. To change the role of an existing project member, select the member's user name and click **Edit**. Then change the role of the project member in **Role**.
 
    .. image:: ../../media/edit_user.png
 
-6. 如需移除项目成员，选中成员用户名，点击 **删除用户**。成员被移除后，将无权限进入项目空间。
+6. To remove a project member, select the member user name and click **Delete**. Once removed, the user cannot access to the project.
 
-## 管理角色权限
+<!--
 
-项目负责人可通过以下步骤管理项目成员的角色权限：
+## Managing Role Permissions
 
-1. 在菜单栏中，点击 **系统管理 > 角色管理**。
+The project administrator can manage the role permissions of project members by taking the following steps:
 
-2. 选中需要管理的角色，然后勾选或移除赋予角色的权限项。
+1. In the menu bar, click **System Management > Role Management**.
 
-3. 点击 **更新角色权限**，完成配置。
+2. Select the role you want to manage, then check or remove the permission items assigned to the role.
+
+3. Click **Update Role Permissions** to complete the configuration.
 
    .. image:: ../../media/manage_role.png
+
+-->
 
 <!--end-->

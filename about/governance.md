@@ -1,17 +1,17 @@
 # Monitoring
 
-EnOS SHC提供对容器的健康检查、对集群和应用的日志监控服务，确保系统和应用健康运行。
+EnOS SHC provides health check service for containers and log monitoring service for clusters and applications to ensure that systems and applications run normally.
 
-## 主要功能
+## Main Functions
 
-**容器健康度检查**
+**Container health check**
 
-在应用部署配置中，支持容器就绪探针和存活探针设置，提供多种方式，确保容器健康度。
+Supports setting readiness probe and liveness probe for testing container health in the application deployment configuration.
 
-**集群日志采集**
+**Cluster log collection**
 
-支持集成第三方开源日志解决方案，监控集群活动和应用状态，帮助通过日志调试和解决问题。
+Supports integrating third-party log services to monitor cluster activities and status, facilitating debugging and problem solving through log analysis.
 
-**告警规则设置**
+**Alert rule setting**
 
-支持对单个应用设置自定义告警规则，实现对应用状态的监控。
+Supports setting customized alert rules for individual applications to monitor application status.
