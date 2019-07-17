@@ -59,7 +59,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'EnOS Apaas'
+project = u'EnOS Service Hosting Center(SHC)'
 copyright = u'2018, EnOS'
 author = u'Envision Digital'
 
@@ -196,7 +196,7 @@ latex_elements = {
         %\fancyhead[RO]{\small \nouppercase{\rightmark}}
         %\fancyhead[LE]{\small \nouppercase{\leftmark}}
 
-        \fancyfoot[R]{\ifthenelse{\isodd{\value{page}}}{{\tiny EnOS Apaas} }{\href{https://www.envisioniot.com}{\tiny Envision digital}}}
+        \fancyfoot[R]{\ifthenelse{\isodd{\value{page}}}{{\tiny EnOS Service Hosting Center(SHC)} }{\href{https://www.envisioniot.com}{\tiny Envision digital}}}
 
         %%% page number
         \fancyfoot[CO, CE]{\thepage}
@@ -235,7 +235,7 @@ latex_elements = {
 
             \vspace{5mm}
 
-            \fontsize{40pt}{\baselineskip}\selectfont \textbf{Apaas}
+            \fontsize{40pt}{\baselineskip}\selectfont \textbf{Service Hosting Center(SHC)}
 
             \vspace{5mm}
 
@@ -273,7 +273,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, u'EnOSDocumentationCenter.tex', u'EnOS Apaas',
+    (master_doc, u'EnOSDocumentationCenter.tex', u'EnOS Service Hosting Center(SHC)',
      u'Envision Digital', 'book', 'true'),
 ]
 
@@ -283,7 +283,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, u'enosdocumentationcenter', u'EnOS Apaas',
+    (master_doc, u'enosdocumentationcenter', u'EnOS Service Hosting Center(SHC)',
      [author], 1)
 ]
 
@@ -294,7 +294,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'EnOSDocumentationCenter', 'EnOS Apaas',
+    (master_doc, 'EnOSDocumentationCenter', 'EnOS Service Hosting Center(SHC)',
      author, 'EnOSDocumentationCenter', 'One line description of project.',
      'Miscellaneous'),
 ]
