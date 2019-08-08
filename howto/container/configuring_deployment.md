@@ -6,7 +6,7 @@ This topic describes how application developers can configure deployment informa
 
 Before creating a new deployment, you need to complete the application creation and the basic information configuration of the application. For detailed steps, see [Creating Applications](../admin/managing_app#newapp).
 
-## Creating deployment
+## Creating Deployment
 
 The deployment information of the application can be configured by two modes: **Config** and **Yaml**. Taking the **Config** mode as an example, create a new deployment for the application by the following steps:
 
@@ -47,9 +47,9 @@ The deployment information of the application can be configured by two modes: **
 
 14. Click the **New Deployment** button to complete the configuration.
 
-## Managing deployment
+## Managing Deployment
 
-After the application deployment configuration is created, you can clone, edit, delete, and publish the deployment.
+After the application deployment configuration is created, you can clone, edit, delete, publish, or rollback the deployment.
 
 .. image:: ../../media/edit_deployment.png
 
@@ -68,5 +68,9 @@ After the application deployment configuration is created, you can clone, edit, 
    - View the publishing results and history of the deployment.
 
      .. image:: ../../media/publish_result.png
+
+- **History Records**: Select the deployment name, click the **History Records** button to view all the history operations to the deployment. Click **Details** to view the history configuration of the deployment; click **Rollback** to roll the current deployment back to the selected configuration.
+
+   .. image:: ../../media/rollback_deployment.png
 
 <!--end-->

@@ -7,7 +7,8 @@ This topic describes how project administrator can create an application DevOps 
 The project administrator for application development and deployment can create a project by taking the following steps:
 
 1. Log into the EnOS Console and select **Service Hosting Center** in the left navigation pannel.
-2. Click **Project > New Project**, enter the project name and description to complete the project creation.
+
+2. Click **New Project**, or select  **Project > All Projects >New Project**, enter the project name and description to complete the project creation.
 
 The created project will be displayed in the project list. Click the project name to open the project overview page to view the basic information of the project.
 
@@ -15,23 +16,30 @@ To update the project information, select the project in the project list and cl
 
 ## Managing Project Members
 
-After a project is created, the project administrator can manage members of the project by taking the following steps:
+After a project is created, the project administrator can add member to the project, assign role to the member, or delete member.
 
-1. In the project list, click on the project name to open the project space.
+Click the project name in **All Projects**, or select the project in **Project** list. Select **Project Members** in the left navigation pannel.
 
-2. In the left navigation bar, select **Project Members**.
+### Add Member
 
-3. In the **User Name** field, search and select a user.
+1. Select one or multiple users in the **User Name** field.
 
-4. Select a role for the selected user and click **Add User** to add the user to the project.
+2. Select one or multiple roles for the selected users in **Role**, and click **Add User** to add the users to the project.
 
    .. image:: ../../media/add_user.png
 
-5. To change the role of an existing project member, select the member's user name and click **Edit**. Then change the role of the project member in **Role**.
+
+
+### Edit Member
+
+1. Search the username of the project member. Check the member you need to edit in the list.
+
+   .. image:: ../../media/search_user.png
+
+2. Click **Edit** to change the role of the project member. Click **Delete** to remove a project member. Once removed, the user cannot access to the project.
 
    .. image:: ../../media/edit_user.png
 
-6. To remove a project member, select the member user name and click **Delete**. Once removed, the user cannot access to the project.
 
 <!--
 

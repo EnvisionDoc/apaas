@@ -12,7 +12,7 @@ In an application development project, complete container configuration for the 
 
 Based on the above requirements, the process of quickly publishing an application is shown in the following figure:
 
-.. image:: media/app_deployment_process.png
+.. image:: media/app_deployment_process_e.png
 
 ## Prerequisites
 
@@ -46,9 +46,8 @@ In this step, create deployment configuration for the application *uic* and comp
 
 4. Click the **New Deployment** button to save the deployment configuration.
 
-   .. image:: media/deployment1.png
+   .. image:: media/deployment1_2.png
 
-   .. image:: media/deployment2.png
 
 ## Step 2: Configure Config Map and Update the Deployment
 
@@ -66,13 +65,13 @@ In this step, create Config Map configuration for the application *uic* and upda
 
 3. Click the **New Config Map** button to save the config map configuration.
 
-   .. image:: media/config_map.png
+   .. image:: media/config_map_e.png
 
 4. Click **Deployments** in the navigation bar, select the deployment configuration created in Step 1, and then click the **Edit** button.
 
 5. Edit the **Config Map** field in the deployment configuration as shown below:
 
-   .. image:: media/update_config_map.png
+   .. image:: media/update_config_map_e.png
 
 
 
@@ -95,7 +94,7 @@ The detailed steps for service configuration are as follows:
 
 3. Click the **New Service** button to complete the service configuration.
 
-   .. image:: media/service.png
+   .. image:: media/service_e.png
 
 The detailed steps for route configuration are as follows:
 
@@ -114,7 +113,7 @@ The detailed steps for route configuration are as follows:
 
 3. Click the **New Route** button to complete the route configuration.
 
-   .. image:: media/route.png
+   .. image:: media/route_e.png
 
 ## Step 4: Create a Pipeline
 
@@ -132,25 +131,23 @@ In this step, create a pipeline for the application *uic*. A pipeline consists o
    - Tool: maven_3.3.9
    - Triggering Mode: Manual
 
-   .. image:: media/pipeline_basic.png
+   .. image:: media/pipeline_basic_e.png
 
-### Adding Stages
+### Configuring Stages
 
-1. Click **Add Stage** and complete the configuration of the *BUILD*, *SCAN*, and *DEPLOY* stages.
-
-2. Select the **BUILD** stage, click the **Add Job** button, and provide the following information:
+1. Select the **BUILD** stage, and provide the following information:
 
    - Job Name: Build
 
-   - Docker File: Dockerfile
+   - Docker File Path: Dockerfile
 
-   - Docker Image: harbor.eniot.io
+   - Docker Registry: harbor.eniot.io
 
      .. image:: media/task_build.png
 
-3. Select the **SCAN** stage, click the **Add Job** button, and provide the following information:
+1. Select the **SCAN** stage, and provide the following information:
 
-   - Job Name: Code Scan
+   - Job Name: Sonar Scan
 
    - Source Code: src/main/java
 
@@ -158,7 +155,9 @@ In this step, create a pipeline for the application *uic*. A pipeline consists o
 
    .. note:: For a detailed description for build and code scan rules, see [Creating Pipelines](../howto/pipeline/creating_pipeline).
 
-4. Select the **DEPLOY** stage, click the **Add Job** button, and provide the following information:
+4. Select the **DEPLOY** stage, and provide the following information:
+
+   - Environment: beta
 
    - Job Name: Deployment
 
@@ -180,7 +179,7 @@ Run the configured pipeline and view the pipeline running results.
 
 2. Click the **Run** button, select the GitLab branch, and click **Run**.
 
-   .. image:: media/run_pipeline.png
+   .. image:: media/run_pipeline_e.png
 
 3. View the running results of the pipeline.
 

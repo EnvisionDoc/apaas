@@ -51,8 +51,8 @@ You can configure the stages and jobs for the pipeline by taking the following s
 
    - **Build**
      - Job Name: Enter the name of the build job.
-     - Docker File: Enter the Dockerfile storage path, such as docker/Dockerfile, which is the project root path by default.
-     - Docker Image: Select the docker image repository.
+     - Docker File Path: Enter the Dockerfile storage path, such as docker/Dockerfile, which is the project root path by default.
+     - Docker Registry: Select the docker image repository.
 
    .. note:: The build job will check if *build.sh* exists. If yes, it will automatically execute *build.sh*; if not, it will judge whether *pom.xml* exists, and if it exists, the *mvn Clean package -U -DskipTests* command will be executed. When building with the custom *build.sh*, you need to set the storage location for build results, such as war/tar/jar/zip packages, to the *target* directory under the project root directory.
 

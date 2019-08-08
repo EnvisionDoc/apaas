@@ -60,7 +60,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'EnOS Service Hosting Center(SHC)'
-copyright = u'2018, EnOS'
+copyright = u'2019, EnOS'
 author = u'Envision Digital'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -235,7 +235,7 @@ latex_elements = {
 
             \vspace{5mm}
 
-            \fontsize{40pt}{\baselineskip}\selectfont \textbf{Service Hosting Center(SHC)}
+            \fontsize{35pt}{\baselineskip}\selectfont \textbf{Service Hosting Center(SHC)}
 
             \vspace{5mm}
 

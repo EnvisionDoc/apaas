@@ -10,7 +10,7 @@ Taking Redis for example, you can create a database configuration by taking the 
 
 2. Click the **New Redis** button to complete the database service configuration:
 
-   - **Instance Name **: Enter the Redis instance name, where the default prefix is *redis-{project-name}-*.
+   - **Instance Name**: Enter the Redis instance name, where the default prefix is *redis-{project-name}-*.
    - **Environment**: Select the Redis usage environment, where you can select alpha, beta, prod, dev, or ppe.
    - **Cluster**: Select the cluster location for Redis.
    - **Storage**: Select the storage capacity of the created Redis database, where you can select 1G, 2G, or 4G.

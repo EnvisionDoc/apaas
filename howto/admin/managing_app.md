@@ -42,11 +42,13 @@ The project administrator or application owner can edit the basic information of
 
    .. image:: ../../media/app_pipeline_overview.png
 
-5. Under the **Member** tab, you can add application members, update existing member information, or remove members.
+5. Under the **Member** tab, you can add application members, search memeber, update existing member information, or remove members.
 
    .. image:: ../../media/app_member.png
 
-6. Under the **Deployment** tab, view the deployment information of the application.
+6. Under the **Deployment** tab, you can view the deployment information of the application, or edit the container configuration.
+
+   .. image:: ../../media/app_deploy.png
 
 
 <!--end-->

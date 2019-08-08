@@ -21,11 +21,11 @@ After the pipeline starts running, its running status and results will be displa
 
 1. Click on the job name in the pipeline to see the results of each job:
 
-   .. image:: ../../media/pipeline_success.png
+   .. image:: ../../media/pipeline_success_e.png
 
 2. If a pipeline job fails, click the **View Log** button or download the log to find the cause of errors. After editing the pipeline and jobs, rerun the pipeline.
 
-   .. image:: ../../media/pipeline_failure.png
+   .. image:: ../../media/pipeline_failure_e.png
 
 When the build job runs successfully, the image tag will be generated automatically. The naming convention of the image tag is as follows:
 
@@ -37,6 +37,6 @@ When the build job runs successfully, the image tag will be generated automatica
 
 ## Next Step
 
-After running the pipeline, you can edit, delete the pipeline, and query its running history.
+After running the pipeline, you can edit, delete the pipeline, rollback the pipeline deployment configuration, and query its running history.
 
 <!--end-->

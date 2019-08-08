@@ -53,8 +53,9 @@ You can take the following steps to query the application deployment and publish
 
 1. In the left navigation bar, select **Logs > Log**.
 2. Select the name of the application to be queried as well as the start and end time for log query.
-3. Enter the filter criteria and click the **Search** button.
+3. Enter the filter criteria and click the **Search** button. The log information that matches the query criteria are displayed on the page.
+4. Click **View Context** of each log to view the selected log and other sequential logs before and after the selected one.
 
-The log information that matches the query criteria will be displayed on the page.
+
 
 <!--end-->
