@@ -36,9 +36,13 @@ Click the project name in **All Projects**, or select the project in **Project**
 
    .. image:: ../../media/search_user.png
 
-2. Click **Edit** to change the role of the project member. Click **Delete** to remove a project member. Once removed, the user cannot access to the project.
+2. Click |edit| to change the role of the project member. Click |delete| to remove a project member. Once removed, the user cannot access to the project.
 
    .. image:: ../../media/edit_user.png
+   
+   .. |edit| image:: ../../media/icon_edit.png
+
+   .. |delete| image:: ../../media/icon_delete.png
 
 
 <!--

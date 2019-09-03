@@ -83,6 +83,10 @@ You can configure the stages and jobs for the pipeline by taking the following s
      - Job Name: Enter the Jenkins job name.
      - Parameters: Enter the required Jenkins parameters.
 
+   - **Custom Job**
+     - Job Name: Enter the name of the custom job.
+     - Shell Script Path: Enter the path of the script file that you want to run.
+
 3. Click and drag the task to sort the running order of the jobs.
 
    .. image:: ../../media/add_stage.png

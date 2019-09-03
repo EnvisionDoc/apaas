@@ -49,17 +49,13 @@ The deployment information of the application can be configured by two modes: **
 
 ## Managing Deployment
 
-After the application deployment configuration is created, you can clone, edit, delete, publish, or rollback the deployment.
+After the application deployment configuration is created, you can clone, publish, rollback, scale, edit, or delete the deployment by clicking "...".
 
 .. image:: ../../media/edit_deployment.png
 
-- **Clone**: In the list of created deployments, select the deployment name and click the **Clone** button to reuse the deployment configuration information and quickly create a new deployment.
+- **Clone**: Click **Clone** of an existing deployment to reuse the deployment configuration information and quickly create a new deployment.
 
-- **Edit**: Select the deployment name and click the **Edit** button to update the deployment configuration information.
-
-- **Delete**: Select the deployment name, click the **Delete** button and confirm, and you can delete the deployment configuration information.
-
-- **Publish**: Select the deployment name, click the **Publish** button, and configure the information required:
+- **Publish**: Click **Publish** of a deployment, and configure the information required:
 
    - In the **Publish Operation** section, select a docker image, and click the **Start** button.
 
@@ -69,8 +65,22 @@ After the application deployment configuration is created, you can clone, edit, 
 
      .. image:: ../../media/publish_result.png
 
-- **History Records**: Select the deployment name, click the **History Records** button to view all the history operations to the deployment. Click **Details** to view the history configuration of the deployment; click **Rollback** to roll the current deployment back to the selected configuration.
+- **History Records**: Click **History Records** of a deployment to view all the history operations to the deployment. Click **Details** to view the history configuration of the deployment; click **Rollback** to roll the current deployment back to the selected configuration.
 
    .. image:: ../../media/rollback_deployment.png
+
+- **View Details**: Click **View Details** to view the detailed configuration of the deployment.
+
+- **Autoscaler**：Click **Autoscaler** of a deployment to change the configuration of replicas, average CPU utilization, and average memory.
+
+
+- **Edit**: Click |edit| of a deployment to update the deployment configuration information.
+
+  .. |edit| image:: ../../media/icon_edit.png
+
+- **Delete**: Click |delete| of a deployment and confirm, then you can delete the deployment configuration information.
+
+  .. |delete| image:: ../../media/icon_delete.png
+
 
 <!--end-->

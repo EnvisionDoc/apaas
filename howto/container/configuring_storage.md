@@ -12,19 +12,17 @@ Create storage configuration for your application as per the following steps:
 
 3. Provide the basic information for the storage:
 
+  .. image:: ../../media/storage_config.png
+
    - **Application**: Select an application that requires the storage.
    - **Environment**: Select the storage usage environment, for which dev, alpha, beta, ppe, and prod environments are supported currently.
    - **Cluster**: Select the cluster where the application is deployed. Note that the cluster is already pre-configured by the system.
+   - **Storage Type**: Select a storage type, supporting Block and Filesystem.
+   - **Access Mode**: Select an access mode, supporting ReadWriteOnce (mounted in read/write mode to exactly 1 host) and ReadWriteMany (mounted in read/write mode to many hosts).
+   - **Storage**: Enter the storage capacity (GB) that is required by the application.
+   - **Description**: Enter the description for the storage.
 
-4. Enter the storage capacity (GB) that is required by the application.
-
-5. Enter the maximum limit on the number of stored files.
-
-  .. image:: ../../media/storage_config.png
-
-6. Enter the description for the storage.
-
-7. Click the **New Storage** button to complete the configuration.
+4. Click the **New Storage** button to complete the configuration.
 
 ## Next Step
 

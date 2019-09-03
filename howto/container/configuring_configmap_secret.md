@@ -44,7 +44,9 @@ You can create a new secret for your application as per the following steps:
 
 4. Select the secret encryption type:
 
-   - **Opaque**: Secret in Base64 encoding format for storing passwords, keys, etc. Note: The value of the Opaque type needs to be filled with Base64-encrypted content. You can use the online encryption and decryption tool: <http://tool.oschina.net/encrypt?type=3>.
+   - **Opaque**: Secret in Base64 encoding format for storing passwords, keys, etc. 
+   
+     .. note:: The value of the Opaque type needs to be filled with Base64-encrypted content. You can use the online encryption and decryption tool: <http://tool.oschina.net/encrypt?type=3>.
 
    - **kubernetes.io/rbd**：
 
